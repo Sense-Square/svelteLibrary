@@ -1,18 +1,10 @@
 <script>
-  import {createEventDispatcher} from 'svelte';
-
-  const dispatch = createEventDispatcher();
 
   export let label;
 
-  function handleClick()
-  {
-    dispatch('message', {text: 'bottone premuto!'});
-  }
-
 </script>
 <div class="b1">
-  <button on:click = {handleClick}>{label}</button>
+  <button on:click on:blur on:focus on:dblclick on:mouseover>{label}</button>
 </div>
 
 
