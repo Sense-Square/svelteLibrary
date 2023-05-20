@@ -1,69 +1,44 @@
-import {Meta, Story} from '@storybook/svelte';
-import { Button } from '../src/';
 
+import {Button} from '../src/index.js';
+
+export default {
+  title: 'Components/Button',
+  component: Button,
+}
+
+const Template = (args) => ({ Component: Button, props: args });
+
+export const Primary = Template.bind({});
+
+Primary.args = {
+  focus: false,
+  label: 'Button',
+};
+/*
 export default {
   title: 'Button',
   component: Button,
-  argTypes:{
-    label: {control: 'text'},
-    primary: {control: 'boolean'},
-    secondary: {control: 'boolean'},
+  argTypes: {
+    label: {control: {type: "text"}},
+    outlined: {control: {type: "boolean"}},
   },
-} as Meta;
+};
 
-const Template: Story = (args) => ({
+const Template = ({ args }) => ({
   Component: Button,
   props: args,
-  on: {
-    click: () => {
-      console.log('clicked');
-    },
-    focus: () => {
-      console.log('focus');
-    },
-  },
 });
+
+export const Default = Template.bind({});
+Default.args = {
+  label: 'ciao',
+  outlined: false,
+};
+
+
 export const Primary = Template.bind({});
 Primary.args = {
   label: 'Click me',
-  primary: true,
+  outlined: false,
 };
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Click me',
-  secondary: true,
-};
-/*
-export const Primary = () => ({
-  Component: Button,
-  props: {
-    label: 'Click me',
-    primary: true
-  },
-  on: {
-    click: (event) => {
-      console.log("Pulsante cliccato");
-    },
-    focus: (event) => {
-      console.log("Pulsante in focus");
-    },
-  },
-});
-
-export const Secondary = () => ({
-  Component: Button,
-  props: {
-    label: 'Click me',
-    secondary: true
-  },
-  on: {
-    click: (event) => {
-      console.log("Pulsante cliccato");
-    },
-    focus: (event) => {
-      console.log("Pulsante in focus");
-    },
-  },
-});
 */

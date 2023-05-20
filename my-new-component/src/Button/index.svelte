@@ -1,8 +1,7 @@
 <script>
-
   export let label;
-
 </script>
+
 <div class="b1">
   <button on:click on:blur on:focus on:dblclick on:mouseover>{label}</button>
 </div>
