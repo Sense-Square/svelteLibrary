@@ -1,7 +1,6 @@
 <script>
   export let label;
   export let size;
-  export let focus;
   export let color;
 </script>
 

@@ -1,4 +1,4 @@
-
+import { action } from '@storybook/addon-actions';
 import {Button} from '../src/index.js';
 
 export default {
@@ -11,15 +11,24 @@ export default {
     },
     color: {
       control: {type: 'color'}
+    }
     },
-  }
-}
+  };
 
-const Template = (args) => ({ Component: Button, props: args });
+const Template = (args) => ({ 
+  Component: Button,
+  props: args,
+  on: {
+    click: action('onClick'),
+    blur: action('onBlur'),
+    focus: action('onFocus'),
+    dblclick: action('onDblClick'),
+    mouseover: action('onMouseOver'),
+  }
+});
 
 export const Primary = Template.bind({});
 Primary.args = {
-  focus: false,
   label: 'Button',
   size: 'medium',
   color: 'cornflowerblue',
