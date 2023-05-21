@@ -41,7 +41,12 @@ Primary.args = {
 };
 
 export const Secondary = Template.bind({});
-Secondary.args = { ...Primary.args, label: "click me!"};
+Secondary.args = {
+  label: 'Click me!',
+  size: 'big',
+  color: 'red',
+  disabled: false,
+};
 
 
 
