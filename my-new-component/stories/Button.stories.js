@@ -5,16 +5,21 @@ export default {
   title: 'Components/Button',
   component: Button,
   argTypes: {
+    label: {
+      control: {type: 'text'}
+    },
     size: {
       options: ['small', 'medium', 'big'],
       control: {type: 'radio'}
     },
     color: {
       control: {type: 'color'}
-    }
     },
-  };
-
+    disabled: {
+      control: {type: 'boolean'}
+    },
+  }
+};
 const Template = (args) => ({ 
   Component: Button,
   props: args,
@@ -32,6 +37,7 @@ Primary.args = {
   label: 'Button',
   size: 'medium',
   color: 'cornflowerblue',
+  disabled: false,
 };
 
 export const Secondary = Template.bind({});

@@ -1,31 +1,9 @@
-<script>
-  export let label;
-  export let size;
-  export let color;
-  export let disabled;
-</script>
-
-<div class="b1">
-  <button
-  on:click
-  on:blur 
-  on:focus 
-  on:dblclick 
-  on:mouseover 
-  disabled={disabled}
-  class = "button {size}"
-  style="background-color: {color}">
-  {label}
-  </button>
-</div>
-
-
-<style>
-  .b1{
+.b1 {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  
   button {
     background-color: cornflowerblue;
     color: white;
@@ -35,22 +13,25 @@
     border-radius: 8px;
     transition: background-color 0.8s ease;
   }
-  button:hover{
+  
+  button:hover {
     background-color: #0b7dda;
   }
-  button:focus{
+  
+  button:focus {
     outline: none;
     background-color: #5F9EA0;
   }
+  
   .small {
     font-size: 12px;
   }
-
+  
   .medium {
     font-size: 16px;
   }
-
+  
   .big {
     font-size: 24px;
   }
-</style>
+  
