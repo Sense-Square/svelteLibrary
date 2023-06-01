@@ -2,7 +2,7 @@
     export let theme = 'light';
   </script>
   
-  <style type="scss" src="./MaterialApp.scss" global>
+  <style type="css" src="../css/theme.css" global>
   </style>
   
   <div class="s-app theme--{theme}">

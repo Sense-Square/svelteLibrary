@@ -1,5 +1,5 @@
 import { action } from '@storybook/addon-actions';
-import {Button} from '../src/index.js';
+import { Button } from '../Components/index.js';
 
 export default {
   title: 'Components/Button',

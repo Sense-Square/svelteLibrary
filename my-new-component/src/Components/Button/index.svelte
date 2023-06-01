@@ -5,7 +5,7 @@
   export let disabled;
 </script>
 
-<div class="b1">
+<div class="primary">
   <button
   on:click
   on:blur 
@@ -13,8 +13,7 @@
   on:dblclick 
   on:mouseover 
   disabled={disabled}
-  class = "button {size}"
-  style="background-color: {color}">
+  class="primary">
   {label}
   </button>
 </div>
@@ -27,8 +26,6 @@
     align-items: center;
   }
   button {
-    background-color: cornflowerblue;
-    color: white;
     padding: 12px 24px;
     margin: 4px 2px;
     cursor: pointer;
@@ -36,11 +33,9 @@
     transition: background-color 0.8s ease;
   }
   button:hover{
-    background-color: #0b7dda;
   }
   button:focus{
     outline: none;
-    background-color: #5F9EA0;
   }
   .small {
     font-size: 12px;

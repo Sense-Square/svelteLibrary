@@ -1,6 +1,17 @@
-  module.exports = {
-  stories: ['../stories/**/*.stories.js'],
-  addons: ['@storybook/addon-actions', '@storybook/addon-controls'],
-  //addons: ['@storybook/addon-actions', '@storybook/addon-links'],
+/** @type { import('@storybook/svelte-vite').StorybookConfig } */
+const config = {
+  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx|svelte)"],
+  addons: [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    "@storybook/addon-interactions",
+  ],
+  framework: {
+    name: "@storybook/svelte-vite",
+    options: {},
+  },
+  docs: {
+    autodocs: "tag",
+  },
 };
-
+export default config;
