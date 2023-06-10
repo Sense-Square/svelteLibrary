@@ -1,41 +1,35 @@
 <script>
   export let label;
-  export let size;
+  export let size = 'medium';
   export let color;
   export let disabled;
+  export let primary;
+
 </script>
 
-<div class="primary">
+
   <button
+  style={`background-color: ${color};`}
+  class={`b1 ${size} ${primary ? 'primary' : ''}`}
   on:click
   on:blur 
   on:focus 
   on:dblclick 
   on:mouseover 
-  disabled={disabled}
-  class="primary">
+  disabled={disabled}>
   {label}
   </button>
-</div>
+
 
 
 <style>
   .b1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  button {
+    color: white;
     padding: 12px 24px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
     transition: background-color 0.8s ease;
-  }
-  button:hover{
-  }
-  button:focus{
-    outline: none;
   }
   .small {
     font-size: 12px;

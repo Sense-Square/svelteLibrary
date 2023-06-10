@@ -1,5 +1,6 @@
 import { action } from '@storybook/addon-actions';
 import { Button } from '../Components/index.js';
+import '/Users/antonio/Desktop/MainLibraryGitHub/svelteLibrary/my-new-component/.storybook/css/theme.css';
 
 export default {
   title: 'Components/Button',
@@ -12,8 +13,11 @@ export default {
       options: ['small', 'medium', 'big'],
       control: {type: 'radio'}
     },
-    color: {
+    color:{
       control: {type: 'color'}
+    },
+    primary: {
+      control: {type: 'boolean'}
     },
     disabled: {
       control: {type: 'boolean'}
@@ -35,17 +39,18 @@ const Template = (args) => ({
 export const Primary = Template.bind({});
 Primary.args = {
   label: 'Button',
-  size: 'medium',
-  color: 'cornflowerblue',
+  primary: true,
   disabled: false,
+  color: 'primary',
+  size: 'big',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: 'Click me!',
-  size: 'big',
-  color: 'red',
   disabled: false,
+  primary: false,
+  color: 'secondary',
 };
 
 
