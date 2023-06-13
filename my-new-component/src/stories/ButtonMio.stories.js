@@ -22,6 +22,15 @@ export default {
     filled: {
       control: {type: 'boolean'}
     },
+    tonal: {
+      control: {type: 'boolean'}
+    },
+    outlined: {
+      control: {type: 'boolean'}
+    },
+    text: {
+      control: {type: 'boolean'}
+    },
   }
 };
 const Template = (args) => ({ 
@@ -38,21 +47,38 @@ const Template = (args) => ({
 
 export const Elevated = Template.bind({});
 Elevated.args = {
-  label: 'elevated',
+  label: 'Elevated',
   elevated: true,
   size: 'medium',
 };
 
 export const Filled = Template.bind({});
 Filled.args = {
-  label: 'filled',
+  label: 'Filled',
   filled: true,
   size: 'medium',
 };
 
+export const Tonal = Template.bind({});
+Tonal.args = {
+  label: 'Tonal',
+  tonal: true,
+  size: 'medium',
+};
 
+export const Outlined = Template.bind({});
+Outlined.args = {
+  label: 'Outlined',
+  outlined: true,
+  size: 'medium',
+};
 
-
+export const Text = Template.bind({});
+Text.args = {
+  label: 'Text',
+  text: true,
+  size: 'medium',
+};
 
 //Args descrive gli argomenti di Button in modo leggibile dalla macchina.
 // Questo sblocca il superpotere di Storybook di alterare e comporre argomenti in modo dinamico.
