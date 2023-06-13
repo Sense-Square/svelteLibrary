@@ -13,13 +13,13 @@ export default {
       options: ['small', 'medium', 'big'],
       control: {type: 'radio'}
     },
-    color:{
-      control: {type: 'color'}
-    },
-    primary: {
+    elevated:  {
       control: {type: 'boolean'}
     },
     disabled: {
+      control: {type: 'boolean'}
+    },
+    filled: {
       control: {type: 'boolean'}
     },
   }
@@ -36,21 +36,18 @@ const Template = (args) => ({
   }
 });
 
-export const Primary = Template.bind({});
-Primary.args = {
-  label: 'Button',
-  primary: true,
-  disabled: false,
-  color: 'primary',
-  size: 'big',
+export const Elevated = Template.bind({});
+Elevated.args = {
+  label: 'elevated',
+  elevated: true,
+  size: 'medium',
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Click me!',
-  disabled: false,
-  primary: false,
-  color: 'secondary',
+export const Filled = Template.bind({});
+Filled.args = {
+  label: 'filled',
+  filled: true,
+  size: 'medium',
 };
 
 
