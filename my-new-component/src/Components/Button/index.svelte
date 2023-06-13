@@ -1,20 +1,51 @@
 <script>
   /**
-   * @type {string} Button contents
+   * Button contents
+   * @type {string}
    */
   export let label;
   
   /**
-   * @type {'small' | 'medium' | 'large'} How large should the button be?
+   * How large should the button be?
+   * @type {'small' | 'medium' | 'large'} 
    */
-
   export let size = 'medium';
-  export let disabled;
-  export let filled;
-  export let elevated;
-  export let tonal;
-  export let outlined;
-  export let text;
+
+  /**
+   * Is the button disabled?
+   * @type {boolean} 
+   */
+  export let disabled = false;
+
+  /**
+   * Is the button filled?
+   * @type {boolean} 
+   */
+  export let filled = false;
+
+  /**
+   * Is the button elevated?
+   * @type {boolean} 
+   */
+  export let elevated = false;
+
+  /**
+   * Is the button tonal?
+   * @type {boolean} 
+   */
+  export let tonal = false;
+
+  /**
+   * Is the button outlined?
+   * @type {boolean} 
+   */
+  export let outlined = false;
+
+  /**
+   * Is the button text?
+   * @type {boolean} 
+   */
+  export let text = false;
 
 </script>
 
