@@ -5,6 +5,7 @@ import '/Users/antonio/Desktop/MainLibraryGitHub/svelteLibrary/my-new-component/
 export default {
   title: 'Components/Button',
   component: Button,
+  tags: ['autodocs'],
   argTypes: {
     label: {
       control: {type: 'text'}
@@ -50,6 +51,11 @@ Elevated.args = {
   label: 'Elevated',
   elevated: true,
   size: 'medium',
+  disabled: false,
+  filled: false,
+  tonal: false,
+  outlined: false,
+  text: false,
 };
 
 export const Filled = Template.bind({});
@@ -57,6 +63,11 @@ Filled.args = {
   label: 'Filled',
   filled: true,
   size: 'medium',
+  disabled: false,
+  elevated: false,
+  tonal: false,
+  outlined: false,
+  text: false,
 };
 
 export const Tonal = Template.bind({});
@@ -64,6 +75,11 @@ Tonal.args = {
   label: 'Tonal',
   tonal: true,
   size: 'medium',
+  disabled: false,
+  elevated: false,
+  filled: false,
+  outlined: false,
+  text: false,
 };
 
 export const Outlined = Template.bind({});
@@ -71,6 +87,11 @@ Outlined.args = {
   label: 'Outlined',
   outlined: true,
   size: 'medium',
+  disabled: false,
+  elevated: false,
+  filled: false,
+  tonal: false,
+  text: false,
 };
 
 export const Text = Template.bind({});
@@ -78,14 +99,9 @@ Text.args = {
   label: 'Text',
   text: true,
   size: 'medium',
+  disabled: false,
+  elevated: false,
+  filled: false,
+  tonal: false,
+  outlined: false,
 };
-
-//Args descrive gli argomenti di Button in modo leggibile dalla macchina.
-// Questo sblocca il superpotere di Storybook di alterare e comporre argomenti in modo dinamico.
-
-
-/*
-Il template viene riutilizzato nelle storie.
-Template.bind({}) crea una copia della funzione che riduce la duplicazione del codice.
- Allo stesso modo, ...Primary.args crea una copia dei dati, riducendone la duplicazione.
-*/

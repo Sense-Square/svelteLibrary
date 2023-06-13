@@ -1,5 +1,13 @@
 <script>
+  /**
+   * @type {string} Button contents
+   */
   export let label;
+  
+  /**
+   * @type {'small' | 'medium' | 'large'} How large should the button be?
+   */
+
   export let size = 'medium';
   export let disabled;
   export let filled;
@@ -62,7 +70,7 @@
 
   .tonal{
     background-color: var(--md-sys-color-secondary-container);
-    color: white;
+    color: whitesmoke;
     border: 1px 
     solid rgba(0, 0, 0, 0.2);
   }
@@ -72,7 +80,7 @@
     color: var(--md-sys-color-primary);
     border: 1px solid var(--md-sys-color-primary);
   }
-  
+
   .text {
     background-color: transparent;
     color: var(--md-sys-color-primary);
