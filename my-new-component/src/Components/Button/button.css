@@ -1,11 +1,12 @@
 .b1{
-  color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  background-color: whitesmoke;
   padding: 12px 24px;
-  margin: 4px 2px;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 18px;
   transition: background-color 0.8s ease;
   min-width: 120px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .small {
   font-size: 12px;
@@ -47,6 +48,6 @@
 
 .text {
   background-color: transparent;
-  color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
   border: none;
 }

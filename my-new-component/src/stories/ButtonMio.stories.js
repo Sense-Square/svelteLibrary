@@ -46,6 +46,18 @@ const Template = (args) => ({
   }
 });
 
+export const Default = Template.bind({});
+Default.args = {
+  label: 'Default',
+  size: 'medium',
+  elevated: false,
+  disabled: false,
+  filled: false,
+  tonal: false,
+  outlined: false,
+  text: false,
+};
+
 export const Elevated = Template.bind({});
 Elevated.args = {
   label: 'Elevated',
