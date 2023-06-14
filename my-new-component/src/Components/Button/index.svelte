@@ -47,6 +47,34 @@
    */
   export let text = false;
 
+  $: {
+    if (elevated == true) {
+      filled = false;
+      tonal = false;
+      outlined = false;
+      text = false;
+    } else if (filled == true) {
+      elevated = false;
+      tonal = false;
+      outlined = false;
+      text = false;
+    } else if (tonal == true) {
+      elevated = false;
+      filled = false;
+      outlined = false;
+      text = false;
+    } else if (outlined == true) {
+      elevated = false;
+      filled = false;
+      tonal = false;
+      text = false;
+    } else if (text == true) {
+      elevated = false;
+      filled = false;
+      tonal = false;
+      outlined = false;
+    }
+  }
 </script>
 
 
