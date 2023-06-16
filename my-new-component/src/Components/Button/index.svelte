@@ -82,7 +82,6 @@
 
 
   <button
-  
   class={`b1 ${size} ${elevated ? 'elevated' : ''} ${filled ? 'filled' : ''} ${tonal ? 'tonal' : ''} ${outlined ? 'outlined': ''} ${text ? 'text' : ''}`}
   on:click
   on:blur 

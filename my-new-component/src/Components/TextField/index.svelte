@@ -1,43 +1,17 @@
 <script>
-  import {createEventDispatcher} from 'svelte';
+  import "./textfield.css"
 
-  const dispatch = createEventDispatcher();
-
+  export let placeholder;
   export let value='';
-  export let placeholder='';
-  export let color='green';
-
-  function handleChange(event){
-    value = event.target.value;
-    dispatch("input", value);
-  }
-
-  function handleInput(event){
-    value = event.target.value;
-    dispatch("input", value);
-  }
-
-  function handleKeyPress(event) {
-    console.log(`hai premuto '${event.key}'!`);
-  }
+  export let filled = false;
+  export let outlined = false;
 
 </script>
 
-<style>
-  ::placeholder {
-    text-align: center;
-  }
-  input{
-    text-align: center;
-  }
-
-  input:focus{
-    background-color: #f3f3df;
-  }
-</style>
-
-<input type="text" bind:value={value} placeholder={placeholder}
-   style="color:{color};"
-   on:input
-   on:change
-   on:keypress />
+<input type="text" placeholder={placeholder}
+  class={`t1 ${filled ? 'filledT' : ''} ${outlined ? '' : ''}`}
+  value={value}
+  on:input
+  on:change
+  on:keypress
+  />
