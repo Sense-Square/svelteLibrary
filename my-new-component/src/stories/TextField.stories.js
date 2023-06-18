@@ -16,6 +16,9 @@ export default {
         outlined: {
             control: {type: 'boolean'}
         },
+        label: {
+          control: {type:'text'}
+        },
     }
   };
 
@@ -32,6 +35,16 @@ const Template = (args) => ({
 export const Default = Template.bind({});
     Default.args = {
         placeholder: 'Prova',
+        label: 'TextField',
+        filled: false,
+        outlined: false,
+};
+
+  
+export const Filled = Template.bind({});
+    Filled.args = {
+        placeholder: 'Prova',
+        label: 'Filled',
         filled: true,
         outlined: false,
 };

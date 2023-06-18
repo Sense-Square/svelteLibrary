@@ -1,16 +1,53 @@
-.t1{
-    border: 1px solid #ccc;
-    padding: 8px;
-    box-sizing: border-box;
-    text-align: center;
-    border-radius: 4px;
+.text-field {
+  position: absolute;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  top: 25px;
 }
 
-.filledT{
-    border: 0px;
-    background-color: var(--md-sys-color-on-surface);
+.label {
+  position: absolute;
+  top: -1px;
+  left: 8px;
+  font-size: 12px;
+  color:  var(--md-sys-color-surface-variant);
 }
 
-.outlined{
+.input {
+  border: 1px solid black;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+  text-align: center;
+}
 
+.text-field.filledT .input {
+  background-color: var(--md-sys-color-on-surface-variant);
+  outline: none;
+  border: 0px;
+}
+
+.text-field.outlined .input {
+  outline: none;
+}
+
+.text-field.outlined .input:focus {
+  border-color: #2196f3;
+}
+
+.indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--md-sys-color-surface-variant);
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.text-field.active .indicator {
+  transform: scaleX(1);
 }

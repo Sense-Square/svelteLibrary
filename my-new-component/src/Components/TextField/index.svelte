@@ -1,17 +1,28 @@
 <script>
-  import "./textfield.css"
+  import './textfield.css';
 
   export let placeholder;
-  export let value='';
+  export let value = '';
+  export let label;
+  export let isActive = false;
   export let filled = false;
   export let outlined = false;
-
 </script>
 
-<input type="text" placeholder={placeholder}
-  class={`t1 ${filled ? 'filledT' : ''} ${outlined ? '' : ''}`}
-  value={value}
-  on:input
-  on:change
-  on:keypress
+<div class="text-field" class:active={isActive} class:filledT={filled} class:outlined={outlined}>
+  {#if label}
+    <label class="label">{label}</label>
+  {/if}
+  <input
+    type="text"
+    class="input"
+    value={value}
+    placeholder={placeholder}
+    on:input
+    on:change
+    on:keypress
+    on:focus={() => isActive = true}
+    on:blur={() => isActive = false}
   />
+  <div class="indicator"></div>
+</div>
