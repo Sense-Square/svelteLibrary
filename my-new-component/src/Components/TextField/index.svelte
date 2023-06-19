@@ -9,7 +9,7 @@
   export let outlined = false;
 </script>
 
-<div class="text-field" class:active={isActive} class:filledT={filled} class:outlined={outlined}>
+<div class="text-field" class:active={isActive} class:filledT={filled} class:outlinedT={outlined}>
   {#if label}
     <label class="label">{label}</label>
   {/if}

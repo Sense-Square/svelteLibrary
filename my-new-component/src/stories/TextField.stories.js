@@ -48,3 +48,11 @@ export const Filled = Template.bind({});
         filled: true,
         outlined: false,
 };
+
+export const Outlined = Template.bind({});
+    Outlined.args = {
+        placeholder: 'Prova',
+        label: 'Outlined',
+        filled: false,
+        outlined: false,
+};

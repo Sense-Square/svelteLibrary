@@ -22,32 +22,35 @@
 
 .elevated {
   background-color: var(--md-sys-color-primary-container);
-  color: white;
+  color: var(--md-sys-color-primary);
   box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
 }
 
 .filled {
-  background-color: var(--md-sys-color-primary-container);
-  color: white;
+  background-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .tonal{
   background-color: var(--md-sys-color-secondary-container);
-  color: whitesmoke;
+  color: var(--md-sys-color-on-secondary-container);
   border: 1px 
   solid rgba(0, 0, 0, 0.2);
 }
 
 .outlined {
-  background-color: var(--md-sys-color-outline);
+  background-color: var(--md-sys-color-surface);
   color: var(--md-sys-color-primary);
   border: 1px solid var(--md-sys-color-primary);
+  outline-width: 1dp;
 }
 
 .text {
   background-color: transparent;
-  color: var(--md-sys-color-on-primary);
+  color: var(--md-sys-color-primary);
   border: none;
+  outline-color: var(--md-sys-color-outline);
 }
