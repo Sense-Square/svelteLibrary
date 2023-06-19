@@ -19,6 +19,10 @@ export default {
         label: {
           control: {type:'text'}
         },
+        size: {
+          options: ['small', 'medium', 'big'],
+          control: {type: 'radio'}
+        },
     }
   };
 
@@ -38,6 +42,7 @@ export const Default = Template.bind({});
         label: 'TextField',
         filled: false,
         outlined: false,
+        size: 'medium',
 };
 
   
@@ -54,5 +59,5 @@ export const Outlined = Template.bind({});
         placeholder: 'Prova',
         label: 'Outlined',
         filled: false,
-        outlined: false,
+        outlined: true,
 };

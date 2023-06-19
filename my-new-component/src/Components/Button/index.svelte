@@ -10,7 +10,7 @@
   
   /**
    * How large should the button be?
-   * @type {'small' | 'medium' | 'large'} 
+   * @type {'small' | 'medium' | 'big'} 
    */
   export let size = 'medium';
 
