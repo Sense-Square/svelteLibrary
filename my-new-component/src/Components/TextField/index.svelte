@@ -43,6 +43,14 @@
    */
   export let size = 'medium';
 
+  $:{
+    if(filled == true){
+      outlined = false;
+    }
+    if(outlined == true){
+      filled = false;
+    }
+  }
 </script>
 
 <div class="text-field" class:active={isActive} class:filledT={filled} class:outlinedT={outlined}>
