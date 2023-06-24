@@ -1,7 +1,6 @@
 <script>
-
   import './button.css';
-
+  import Ripple from '../../actions/Ripple';
   /**
    * Button contents
    * @type {string}
@@ -50,6 +49,8 @@
    */
   export let text = false;
 
+  export let ripple = {};
+
   $: {
     if (elevated == true) {
       filled = false;
@@ -83,6 +84,7 @@
 
   <button
   class={`b1 ${size} ${elevated ? 'elevated' : ''} ${filled ? 'filled' : ''} ${tonal ? 'tonal' : ''} ${outlined ? 'outlined': ''} ${text ? 'text' : ''}`}
+  use:Ripple = {ripple}
   on:click
   on:blur 
   on:focus 
