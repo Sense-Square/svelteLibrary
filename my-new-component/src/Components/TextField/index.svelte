@@ -55,7 +55,7 @@
 
 <div class="text-field" class:active={isActive} class:filledT={filled} class:outlinedT={outlined}>
   {#if label}
-    <label class={`label ${size}`}>{label}</label>
+    <label class={`label ${size} {outlined ? 'outlined-label' : ''}`}>{label}</label>
   {/if}
   <input
     type="text"
