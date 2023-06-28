@@ -60,12 +60,15 @@
 
 .text-field.outlinedT .input:focus {
   border-color: var(--md-sys-color-primary);
+  border-style:groove;
 }
 
-.text-field.outlinedT:focus .label {
+.text-field.outlinedT .label.focused {
   border-color: var(--md-sys-color-primary);
+  border-style:groove;
+  transition: border-color 0.3s;
+  color: var(--md-sys-color-on-primary);
 }
-
 
 .indicator {
   position: absolute;

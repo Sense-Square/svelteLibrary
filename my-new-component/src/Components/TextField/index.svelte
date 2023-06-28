@@ -54,9 +54,7 @@
 </script>
 
 <div class="text-field" class:active={isActive} class:filledT={filled} class:outlinedT={outlined}>
-  {#if label}
-    <label class={`label ${size} {outlined ? 'outlined-label' : ''}`}>{label}</label>
-  {/if}
+  
   <input
     type="text"
     class={`input ${size}`}
@@ -68,6 +66,9 @@
     on:focus={() => isActive = true}
     on:blur={() => isActive = false}
   />
+  {#if label}
+    <label class={`label ${size} {outlined ? 'outlined-label' : ''} ${isActive ? 'focused' : ''}`}>{label}</label>
+  {/if}
   {#if filled}
   <div class="indicator"></div>
   {/if}
