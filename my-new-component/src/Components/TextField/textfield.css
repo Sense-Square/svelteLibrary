@@ -31,10 +31,15 @@
   background-color: white;
   box-sizing: border-box;
   border-radius: 4px;
-  transition: border-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
   text-align: center;
   font-size: 14px;
   width: 200px;
+}
+
+.input:focus{
+  background-color: whitesmoke;
 }
 
 .text-field.filledT .input {
@@ -55,7 +60,8 @@
   max-width: fit-content;
   border: 1px solid black;
   border-radius: 4px;
- 
+  transition: color 0.3s;
+  transition: transform 0.3s;
 }
 
 .text-field.outlinedT .input:focus {
