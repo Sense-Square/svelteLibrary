@@ -31,6 +31,11 @@
   padding: 10px 20px;
 }
 
+.b1:hover{
+  opacity: 0.8;
+  color: currentColor;
+}
+
 .filled {
   background-color: var(--md-sys-color-primary);
   color: var(--md-sys-color-on-primary);
@@ -60,10 +65,4 @@
 
 .b1:focus{
   opacity: 0.8;
-}
-
-.b1:hover{
-  opacity: 0.9;
-  transform: scale(1.1);
-  transition: transform 0.3s;
 }

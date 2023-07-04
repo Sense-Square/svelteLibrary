@@ -41,7 +41,7 @@
    * How large should the textfield be?
    * @type {'small' | 'medium' | 'big'} 
    */
-  export let size = 'medium';
+  export let size = 'small';
 
   $:{
     if(filled == true){
@@ -54,7 +54,6 @@
 </script>
 
 <div class="text-field" class:active={isActive} class:filledT={filled} class:outlinedT={outlined}>
-  
   <input
     type="text"
     class={`input ${size}`}
@@ -70,7 +69,6 @@
     <label class={`label ${size} {outlined ? 'outlined-label' : ''} ${isActive ? 'focused' : ''}`}>{label}</label>
   {/if}
   {#if filled}
-  <div class="indicator"></div>
+  <div class="indicator {size}"></div>
   {/if}
-
 </div>

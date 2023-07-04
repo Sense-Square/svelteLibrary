@@ -1,6 +1,6 @@
 import { action } from '@storybook/addon-actions';
 import { TextField } from '../Components/index.js';
-import { text } from 'svelte/internal';
+
 
 export default {
     title: 'Components/TextField',
@@ -38,7 +38,7 @@ const Template = (args) => ({
 
 export const Default = Template.bind({});
     Default.args = {
-        placeholder: 'Prova',
+        placeholder: 'TextField',
         label: 'TextField',
         filled: false,
         outlined: false,
@@ -48,16 +48,18 @@ export const Default = Template.bind({});
   
 export const Filled = Template.bind({});
     Filled.args = {
-        placeholder: 'Prova',
+        placeholder: 'TextField',
         label: 'Filled',
         filled: true,
         outlined: false,
+        size: 'medium',
 };
 
 export const Outlined = Template.bind({});
     Outlined.args = {
-        placeholder: 'Prova',
+        placeholder: 'TextField',
         label: 'Outlined',
         filled: false,
         outlined: true,
+        size: 'medium',
 };
