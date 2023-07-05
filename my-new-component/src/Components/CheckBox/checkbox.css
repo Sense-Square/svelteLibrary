@@ -18,7 +18,7 @@
   left: 0;
   height: 18px;
   width: 18px;
-  background-color: transparent;
+  background-color: var(--md-sys-color-on-surface);;
   border: 2px solid #ccc;
   border-radius: 4px;
 }
@@ -44,14 +44,46 @@
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
-/*
-.checkbox.selected .checkmark {
-  background-color: green;
-  outline-width: 0;
+
+.checkbox.disabled .checkmark {
+  background-color: gray;
+  border-color: black;
+  opacity: 0.8;
 }
-*/
-/*
-.checkbox.selected .checkmark:after {
-  border-color: var(--md-sys-color-on-primary);
+
+.checkbox.hovered .checkmark {
+  background-color: var(--md-sys-color-on-surface);
+  border-color: #ccc;
 }
-*/
+
+.checkbox.hovered .checkmark:after {
+  display:none;
+}
+
+.checkbox .state-layer {
+  position: absolute;
+  left: -9px;
+  top: -8px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.checkbox.hovered .state-layer {
+  background-color: var(--md-sys-color-on-surface);
+  opacity: 0.6;
+}
+
+
+.checkbox:hover .state-layer {
+  background-color: var(--md-sys-color-primary);
+  opacity: 0.6;
+}
+
+.checkbox.disabled .state-layer{
+  background-color: transparent;
+}
+

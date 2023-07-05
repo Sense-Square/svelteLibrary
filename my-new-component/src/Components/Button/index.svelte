@@ -82,7 +82,7 @@
 </script>
 
   
-  
+
   <button
   use:Ripple = {ripple}
   class={`b1 ${size} ${elevated ? 'elevated' : ''} ${filled ? 'filled' : ''} ${tonal ? 'tonal' : ''} ${outlined ? 'outlined': ''} ${text ? 'text' : ''}`}
@@ -92,7 +92,7 @@
   on:dblclick 
   on:mouseover 
   disabled={disabled}>
+  <div class="colorB"></div>
   {label}
   </button>
-  
    

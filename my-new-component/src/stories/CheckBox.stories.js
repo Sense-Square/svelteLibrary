@@ -9,6 +9,15 @@ export default {
         checked: {
             control: {type: 'boolean'}
         },
+        enabled: {
+            control: {type: 'boolean'}
+        },
+        disabled: {
+          control: {type: 'boolean'}
+        },
+        hovered: {
+          control: {type: 'boolean'}
+        },
     }
   };
 
@@ -23,4 +32,24 @@ export default {
   export const Default = Template.bind({});
     Default.args = {
         checked: false,
+        enabled: false,
+        disabled: false,
+        hovered: false,
 };
+
+export const Disabled = Template.bind({});
+    Disabled.args = {
+        checked: false,
+        enabled: false,
+        disabled: true,
+        hovered: false,
+};
+
+export const Hovered = Template.bind({});
+    Hovered.args = {
+        checked: false,
+        enabled: false,
+        disabled: false,
+        hovered: true,
+};
+
