@@ -18,8 +18,8 @@
   left: 0;
   height: 18px;
   width: 18px;
-  background-color: var(--md-sys-color-on-surface);;
-  border: 2px solid #ccc;
+  background-color: var(--md-sys-color-on-primary-container);
+  border: 2px solid rgb(167, 99, 223);
   border-radius: 4px;
 }
 
@@ -48,7 +48,7 @@
 .checkbox.disabled .checkmark {
   background-color: gray;
   border-color: black;
-  opacity: 0.8;
+  opacity: 0.3;
 }
 
 .checkbox.hovered .checkmark {

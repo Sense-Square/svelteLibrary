@@ -1,0 +1,11 @@
+
+.label-container {
+    
+    margin-bottom: 10px; /* Margine inferiore del container dell'etichetta */
+}
+
+.label-text {
+    font-size: 14px; /* Dimensione del testo dell'etichetta */
+    color: #333; /* Colore del testo dell'etichetta */
+}
+  

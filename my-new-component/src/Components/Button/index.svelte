@@ -81,18 +81,19 @@
   }
 </script>
 
-  
 
-  <button
-  use:Ripple = {ripple}
-  class={`b1 ${size} ${elevated ? 'elevated' : ''} ${filled ? 'filled' : ''} ${tonal ? 'tonal' : ''} ${outlined ? 'outlined': ''} ${text ? 'text' : ''}`}
-  on:click
-  on:blur 
-  on:focus 
-  on:dblclick 
-  on:mouseover 
-  disabled={disabled}>
-  <div class="colorB"></div>
-  {label}
-  </button>
+<button
+use:Ripple = {ripple}
+class={`b1 ${size} ${elevated ? 'elevated' : ''} ${filled ? 'filled' : ''} ${tonal ? 'tonal' : ''} ${outlined ? 'outlined': ''} ${text ? 'text' : ''}`}
+on:click
+on:blur 
+on:focus 
+on:dblclick 
+on:mouseover 
+disabled={disabled}>
+{label}
+<div class={`colorB ${elevated ? 'elevated' : ''} ${filled ? 'filled' : ''} ${tonal ? 'tonal' : ''} ${outlined ? 'outlined': ''} ${text ? 'text' : ''}`}>
+{label}
+</div>
+</button>
    
