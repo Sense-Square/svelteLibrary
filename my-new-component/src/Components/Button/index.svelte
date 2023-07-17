@@ -92,8 +92,5 @@ on:dblclick
 on:mouseover 
 disabled={disabled}>
 {label}
-<div class={`colorB ${elevated ? 'elevated' : ''} ${filled ? 'filled' : ''} ${tonal ? 'tonal' : ''} ${outlined ? 'outlined': ''} ${text ? 'text' : ''}`}>
-{label}
-</div>
 </button>
    

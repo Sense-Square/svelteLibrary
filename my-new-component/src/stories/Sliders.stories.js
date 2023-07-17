@@ -18,6 +18,9 @@ export default {
       disabled: {
         control: {type: 'boolean'}
       },
+      discrete: {
+        control: {type: 'boolean'}
+      },
     }
 };
 const Template = (args) => ({ 
@@ -29,12 +32,13 @@ const Template = (args) => ({
     }
   });
 
-export const Default = Template.bind({});
-Default.args = {
+export const Continuous = Template.bind({});
+Continuous.args = {
   value: 40,
   min: 0,
   max: 100,
   disabled: false,
+  discrete: false,
 };
 
 export const Disabled = Template.bind({});
@@ -43,5 +47,15 @@ Disabled.args = {
   min: 0,
   max: 100,
   disabled: true,
+  discrete: false,
+};
+
+export const Discrete = Template.bind({});
+Discrete.args = {
+  value: 40,
+  min: 0,
+  max: 100,
+  disabled: false,
+  discrete: true,
 };
   
