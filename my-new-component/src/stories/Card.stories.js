@@ -12,9 +12,6 @@ export default {
     description: {
       control: {type: 'text'}
     },
-    disabled: {
-      control: {type: 'text'}
-    },
     filled: {
       control: {type: 'boolean'}
     },
@@ -46,6 +43,7 @@ export const Default = Template.bind({});
 Default.args = {
   title: 'Default Card',
   description: 'This is a default card.',
+  disabled: false,
 };
 
 export const Elevated = Template.bind({});

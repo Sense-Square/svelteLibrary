@@ -75,6 +75,7 @@
   color: var(--md-sys-color-primary);
   border: 1px solid var(--md-sys-color-primary);
   outline-width: 1dp;
+  opacity: 0.9;
 }
 
 .outlined:hover{

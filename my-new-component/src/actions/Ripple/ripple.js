@@ -60,7 +60,7 @@ const defaults = {
   
     // Enlarge ripple
     rippleStyle.transform = `scale(${
-      Math.max(targetRect.width, targetRect.height) * 0.01
+      Math.max(targetRect.width, targetRect.height) * 0.02
     }) translate(0,0)`;
     return ripple;
   }
