@@ -12,6 +12,9 @@ export default {
     description: {
       control: {type: 'text'}
     },
+    disabled: {
+      control: {type: 'boolean'}
+    },
     filled: {
       control: {type: 'boolean'}
     },
@@ -51,6 +54,7 @@ Elevated.args = {
   title: 'Elevated Card',
   description: 'This card has an elevated style.',
   elevated: true,
+  disabled: false,
 };
 
 export const Filled = Template.bind({});
@@ -58,6 +62,7 @@ Filled.args = {
   title: 'Filled Card',
   description: 'This card has a filled style.',
   filled: true,
+  disabled: false,
 };
 
 export const Tonal = Template.bind({});
@@ -65,6 +70,7 @@ Tonal.args = {
   title: 'Tonal Card',
   description: 'This card has a tonal style.',
   tonal: true,
+  disabled: false,
 };
 
 export const Outlined = Template.bind({});
@@ -72,4 +78,5 @@ Outlined.args = {
   title: 'Outlined Card',
   description: 'This card has an outlined style.',
   outlined: true,
+  disabled: false,
 };

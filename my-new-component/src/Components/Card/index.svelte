@@ -4,10 +4,34 @@
    import Ripple from '../../actions/Ripple';
    import Button from '../Button/index.svelte';
 
+   /**
+   * Card title
+   * @type {string}
+   */
    export let title='';
+
+   /**
+   * Card description
+   * @type {string}
+   */
    export let description='';
-   export let buttonLabel = 'click me';
+
+   /**
+   * Button label
+   * @type {string}
+   */
+   export let buttonLabel = 'Click me';
+
+   /**
+   * Is Card disabled?
+   * @type {string}
+   */
    export let disabled = false;
+   /**
+   * How large should the button's card be?
+   * @type {'small' | 'medium' | 'big'} 
+   */
+   export let size = undefined;
    
    export let ripple = {};
     
@@ -54,8 +78,6 @@
       tonal = false;
     }
   }
-
-  
 </script>
 
 <div class={`card ${elevated ? 'elevatedC' : ''} ${filled ? 'filledC' : ''} ${tonal ? 'tonalC' : ''} ${outlined ? 'outlinedC': ''}`}
@@ -69,13 +91,12 @@ on:keydown
 on:keydown>
     <h3>{title}</h3>
     <p>{description}</p>
-    <div class="button1">
       <Button
-      class={` ${elevated ? 'elevated' : ''} `}
+      class={`${elevated ? 'elevated' : ''} ${filled ? 'filled' : ''} ${tonal ? 'tonal' : ''} ${outlined ? 'outlined': ''} ${size}`}
       label={buttonLabel} 
       disabled={disabled}
-      size=medium/>
-    </div>
-    
-    
+      elevated={elevated}
+      filled={filled}
+      tonal={tonal}
+      outlined={outlined}/>
 </div>

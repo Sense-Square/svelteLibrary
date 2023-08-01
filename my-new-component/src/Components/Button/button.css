@@ -10,17 +10,6 @@
   color: var(--md-sys-color-on-primary);
   padding: 12px 24px;
 }
-/*
-.colorB{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: grid;
-  place-items: center;
-  
-}*/
 
 .b1:hover{
   opacity: 0.8;
