@@ -55,6 +55,7 @@ Elevated.args = {
   description: 'This card has an elevated style.',
   elevated: true,
   disabled: false,
+  button: true,
 };
 
 export const Filled = Template.bind({});
@@ -63,6 +64,7 @@ Filled.args = {
   description: 'This card has a filled style.',
   filled: true,
   disabled: false,
+  button: true,
 };
 
 export const Tonal = Template.bind({});
@@ -71,6 +73,7 @@ Tonal.args = {
   description: 'This card has a tonal style.',
   tonal: true,
   disabled: false,
+  button:true,
 };
 
 export const Outlined = Template.bind({});
@@ -79,4 +82,19 @@ Outlined.args = {
   description: 'This card has an outlined style.',
   outlined: true,
   disabled: false,
+  button:true,
+};
+
+export const onlyTitle = Template.bind({});
+onlyTitle.args = {
+  title: 'Only a title',
+  disabled: false,
+  button: false,
+};
+
+export const onlyButton = Template.bind({});
+onlyButton.args = {
+  title: 'With only a button',
+  disabled: false,
+  button: true,
 };

@@ -59,6 +59,8 @@
      */
     export let outlined = false;
 
+    export let button = false;
+
     $: {
     if (elevated == true) {
       filled = false;
@@ -91,6 +93,7 @@ on:keydown
 on:keydown>
     <h3>{title}</h3>
     <p>{description}</p>
+    {#if button}
       <Button
       class={`${elevated ? 'elevated' : ''} ${filled ? 'filled' : ''} ${tonal ? 'tonal' : ''} ${outlined ? 'outlined': ''} ${size}`}
       label={buttonLabel} 
@@ -99,4 +102,5 @@ on:keydown>
       filled={filled}
       tonal={tonal}
       outlined={outlined}/>
+    {/if}
 </div>
