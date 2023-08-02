@@ -26,8 +26,8 @@ export default {
     }
   });
 
-  export const Default = Template.bind({});
-    Default.args = {
+  export const Enabled = Template.bind({});
+    Enabled.args = {
         checked: false,
         enabled: false,
         disabled: false,

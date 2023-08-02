@@ -1,6 +1,5 @@
 
 .label-container {
-  flex-grow: 1;
   margin-bottom: 10px;
 }
 
@@ -8,10 +7,3 @@
   font-size: 14px; 
   color: #333; 
 }
-
-
-
-
-
-
-
