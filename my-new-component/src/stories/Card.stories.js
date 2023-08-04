@@ -47,6 +47,7 @@ Default.args = {
   title: 'Default Card',
   description: 'This is a default card.',
   disabled: false,
+  button: true,
 };
 
 export const Elevated = Template.bind({});

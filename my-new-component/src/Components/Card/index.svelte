@@ -1,6 +1,7 @@
 <script>
-   import './card.css'
-   import '../Button/button.css'
+   import './card.css';
+   import '../Button/button.css';
+   import '../../global.css';
    import Ripple from '../../actions/Ripple';
    import Button from '../Button/index.svelte';
 

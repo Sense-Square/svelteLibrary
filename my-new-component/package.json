@@ -35,7 +35,8 @@
     "storybook": "^7.0.18",
     "svelte": "^3.20.1",
     "svelte-jester": "^1.0.5",
-    "svelte-loader": "^2.13.6"
+    "svelte-loader": "^2.13.6",
+    "svelte-preprocess": "^5.0.4"
   },
   "keywords": [
     "svelte"
