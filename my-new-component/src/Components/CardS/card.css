@@ -1,0 +1,134 @@
+.card {
+  position: relative;
+  background-color: var(--md-sys-color-on-primary-container);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+  
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+  
+.card p {
+  font-size: 14px;
+  color: #555555;
+}
+
+.card.elevatedC{
+  background-color: var(--md-sys-color-primary-container);
+  opacity: 0.9;
+}
+
+.card.elevatedC:hover{
+  opacity: 0.88;
+}
+
+.card.elevatedC:focus{
+  opacity: 0.85;
+}
+
+.card.elevatedC h3{
+  color: var(--md-sys-color-primary);
+}
+
+.card.elevatedC p{
+  color: white;
+}
+
+.card.filledC{
+  background-color: var(--md-sys-color-primary);
+}
+
+.card.filledC:hover{
+  opacity: 0.95;
+}
+
+.card.card.filledC:focus{
+  opacity: 0.93;
+}
+
+.card.filledC h3{
+  color: var(--md-sys-color-on-primary);
+}
+
+.card.filledC p{
+  color: black;
+}
+
+.card.tonalC{
+  background-color: var(--md-sys-color-secondary-container);
+}
+
+.card.tonalC:hover{
+  opacity: 0.96;
+}
+
+.card.tonalC:focus{
+  opacity: 0.95;
+}
+
+.card.tonalC h3{
+  color: var(--md-sys-color-on-secondary-container);
+}
+
+.card.tonalC p{
+  color: white;
+}
+
+.card.outlinedC{
+  background-color: var(--md-sys-color-surface);
+  opacity: 0.9;
+}
+
+.card.outlinedC:hover{
+  opacity: 0.85;
+}
+
+.card.outlinedC:focus{
+  opacity: 0.83;
+}
+
+.card.outlinedC h3{
+  color: var(--md-sys-color-primary);
+}
+
+.card.outlinedC p{
+  color: white;
+}
+
+.b1 {
+  margin-top: auto; 
+  margin-left: auto;
+  border-color: transparent;
+  color: black;
+}
+
+.b1.elevated{
+  background-color: var(--md-sys-color-primary);
+  color: white;
+}
+
+.b1.filled{
+  background-color: var(--md-sys-color-on-primary);
+  color: white;
+}
+
+.b1.outlined{
+  background-color: var(--md-sys-color-primary);
+}
+
+.b1.tonal{
+  background-color: var(--md-sys-color-on-secondary-container);
+}
+
+.card.disabledC{
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+  
