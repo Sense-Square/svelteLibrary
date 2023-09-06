@@ -15,7 +15,7 @@
   </script>
   
   <div class="label-container">
-      <p class="label-text">{value}</p>
+      <p class="label-text"></p>
     </div>
   
   {#if discrete}
